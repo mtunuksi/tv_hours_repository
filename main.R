@@ -2,7 +2,7 @@ library(tidyverse)
 library(here)
 
 tv_hours_table <- gss_cat %>% 
-  group_by(marital) %>% 
+  group_bys(marital) %>% 
   summarize(mean_tv_hours = mean(tvhours, na.rm = TRUE))
 
 
